@@ -1499,7 +1499,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELC" settingAlias="ANSC1"/>
-         <value>analog</value>
+         <value>digital</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCCP" settingAlias="IOCCP0"/>
@@ -1695,7 +1695,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RC1"/>
-         <value/>
+         <value>TouchTSensor</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RC2"/>
@@ -2315,7 +2315,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RC1"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Pin Module_IOCIISRFunction"/>
@@ -2647,7 +2647,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RC1"/>
-         <value>disabled</value>
+         <value>input</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="trisUserSetRC4"/>
@@ -2951,7 +2951,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELC"/>
-         <value>63</value>
+         <value>61</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATC" settingAlias="LATC0" alias="set"/>
@@ -3165,19 +3165,19 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>40ab2fb810a091a62273a0e486a9e06bce1d820d40017f1b141699264699cfae</hash>
+         <hash>d9f3c2c00cdbbd6abd5f0ee44c0b5712202eb37cfa333e782802c52161831261</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>2b550a812aa69d782be0f6fcae65d3126c5d8fa669ad510bb9adab83449ab5cc</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\eusart1.c</file>
-         <hash>22441544a10b2b17d169c124a6630b04ffd871e0d84aea418e8530b1ab4a13bf</hash>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>62eac8cc16821c217d9ca7214dd857b09bd2209a777ba075101c7c525a9c79c8</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>dfaf67207c109223223eef54ad65f6c2679d0bcd89fad0fd7456e489f67cc9bf</hash>
+         <file>mcc_generated_files\eusart1.c</file>
+         <hash>22441544a10b2b17d169c124a6630b04ffd871e0d84aea418e8530b1ab4a13bf</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

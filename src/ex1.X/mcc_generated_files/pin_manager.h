@@ -99,6 +99,26 @@
 #define LEDDuty_SetAnalogMode()  do { ANSELAbits.ANSA5 = 1; } while(0)
 #define LEDDuty_SetDigitalMode() do { ANSELAbits.ANSA5 = 0; } while(0)
 
+// get/set TouchTSensor aliases
+#define TouchTSensor_TRIS               TRISCbits.TRISC1
+#define TouchTSensor_LAT                LATCbits.LATC1
+#define TouchTSensor_PORT               PORTCbits.RC1
+#define TouchTSensor_WPU                WPUCbits.WPUC1
+#define TouchTSensor_OD                ODCONCbits.ODCC1
+#define TouchTSensor_ANS                ANSELCbits.ANSC1
+#define TouchTSensor_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
+#define TouchTSensor_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
+#define TouchTSensor_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
+#define TouchTSensor_GetValue()           PORTCbits.RC1
+#define TouchTSensor_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
+#define TouchTSensor_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
+#define TouchTSensor_SetPullup()      do { WPUCbits.WPUC1 = 1; } while(0)
+#define TouchTSensor_ResetPullup()    do { WPUCbits.WPUC1 = 0; } while(0)
+#define TouchTSensor_SetPushPull()    do { ODCONCbits.ODCC1 = 1; } while(0)
+#define TouchTSensor_SetOpenDrain()   do { ODCONCbits.ODCC1 = 0; } while(0)
+#define TouchTSensor_SetAnalogMode()  do { ANSELCbits.ANSC1 = 1; } while(0)
+#define TouchTSensor_SetDigitalMode() do { ANSELCbits.ANSC1 = 0; } while(0)
+
 // get/set RC4 procedures
 #define RC4_SetHigh()    do { LATCbits.LATC4 = 1; } while(0)
 #define RC4_SetLow()   do { LATCbits.LATC4 = 0; } while(0)
