@@ -67,7 +67,12 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-
+    printf("uart1 test1\n\r");
+    printf("uart1 test2\n\r");
+    //default led status
+    LEDTouch_SetLow();  //1
+    LEDDuty_SetHigh();  //0
+    
     while (1)
     {
         // Add your application code
