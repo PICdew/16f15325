@@ -48,8 +48,22 @@
 /*
                          Main application
  */
+void set_led(uint8_t led){
+    if(led){
+        //1
+        LEDTouch_SetHigh();  //1
+        LEDDuty_SetLow();  //0        
+    }else{
+        //0
+        //default led status
+        LEDTouch_SetLow();  //1
+        LEDDuty_SetHigh();  //0        
+    }
+}
 void main(void)
 {
+    uint8_t led=0;
+    uint8_t touch_sensor=0;
     // initialize the device
     SYSTEM_Initialize();
 
@@ -70,12 +84,22 @@ void main(void)
     printf("uart1 test1\n\r");
     printf("uart1 test2\n\r");
     //default led status
-    LEDTouch_SetLow();  //1
-    LEDDuty_SetHigh();  //0
+    led=0;
+    set_led(led);
     
     while (1)
     {
         // Add your application code
+        while(PORTCbits.RC1 == 1); //wait chang;
+        
+        //low
+        if(led==0){
+            led = 1;
+        }else{
+            led = 0;
+        }
+        set_led(led);
+        while(PORTCbits.RC1 == 0); //wait chang;
     }
 }
 /**
