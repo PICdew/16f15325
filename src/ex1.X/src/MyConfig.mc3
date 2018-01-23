@@ -3154,5 +3154,30 @@
          <value>1</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap"/>
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>342baa2957cf4d0efd57f3a5270b686da7a3fe0d1850853cf0f9623b99e28731</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\eusart1.h</file>
+         <hash>e1615047acdc724486a33f9cec8e7d058f82debfc4417d81c429f302a27e3139</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>40ab2fb810a091a62273a0e486a9e06bce1d820d40017f1b141699264699cfae</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>2b550a812aa69d782be0f6fcae65d3126c5d8fa669ad510bb9adab83449ab5cc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>80699d54369ac9d684c6d869177b7ff1e7f35a558b965778a625d9bd9144f6c9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\eusart1.c</file>
+         <hash>22441544a10b2b17d169c124a6630b04ffd871e0d84aea418e8530b1ab4a13bf</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
 </config>
